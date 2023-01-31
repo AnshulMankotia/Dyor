@@ -1,0 +1,44 @@
+.section3{
+    min-height: 50vh;
+    background: var(--linear-gradient-blue);
+}
+.discover{
+    display: flex;
+    justify-content: space-between;
+}
+.discover .l-side{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.discover .l-side>h3{
+    color: var(--grey-clr);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.54375rem;
+}
+.discover .l-side>p{
+    color: var(--grey-clr);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.54375rem;
+}
+
+.discover .l-side>h2{
+    color:#ffffff;
+    line-height: 4.5rem;
+    font-size: 3rem;
+}
+.discover .button{
+    display: flex;
+    margin-top: 4rem;
+}
+.discover .r-side{
+    position: relative;
+}
+.discover .r-side .childSlab{
+    position: absolute;
+    top: 10%;
+    left: -80%;
+}

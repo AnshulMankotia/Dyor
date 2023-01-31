@@ -1,0 +1,33 @@
+.joinButton button{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.joinButton{
+    position: relative;
+    cursor: pointer;
+}
+.joinButton>a{
+    padding: 2rem;
+}
+.joinButton::after{
+    content: "";
+    display: inline-block;
+    background-color: var(--secondary-clr);
+    position: absolute;
+    z-index: -1;
+    width: 42%;
+    height: 257%;
+    left: 1%;
+    top: -73%;
+    border-radius: 40px;
+    transition: width 0.3s ease-in-out;
+}
+
+.joinButton:hover::after{
+    width: 100%;
+}

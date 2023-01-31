@@ -1,0 +1,33 @@
+.navButton button{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.navButton{
+    position: relative;
+    cursor: pointer;
+}
+.navButton>a{
+    padding: 2rem;
+}
+.navButton::after{
+    content: "";
+    display: inline-block;
+    background-color: var(--secondary-clr);
+    position: absolute;
+    z-index: -1;
+    width: 42%;
+    height: 257%;
+    left: 1%;
+    top: -73%;
+    border-radius: 40px;
+    transition: width 0.3s ease-in-out;
+}
+
+.navButton:hover::after{
+    width: 100%;
+}

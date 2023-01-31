@@ -1,0 +1,20 @@
+.section6{
+    min-height: 40vh;
+}
+
+.section6 .t-grid .column {
+    background-color:transparent;
+    width: 100%;
+    border-radius: 30px;
+    padding: 2rem 4rem;
+}
+.section6 .t-grid{
+    background: var(--linear-gradient-blue);
+} 
+.section6 .t-content1>h3{
+    color: #FFFFFF;
+}
+.section6 .t-content {
+    gap: 1rem;
+}
+

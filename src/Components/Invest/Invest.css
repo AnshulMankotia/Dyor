@@ -1,0 +1,9 @@
+.section7{
+    min-height: 50vh;
+    background-image: url('../../images/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section7 .testimonial {
+    background:transparent;
+}

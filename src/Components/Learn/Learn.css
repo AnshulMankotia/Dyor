@@ -1,0 +1,56 @@
+.section4{
+    min-height: 80vh;
+    background: var(--linear-gradient-blue);
+}
+.learn{
+    justify-content: space-around;
+    align-items: center;
+}
+.learn .r-side{
+    gap: 4rem;
+}
+.learn .r-side .content1>h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+}
+.learn .r-side .content1>p{
+    color: var(--grey-clr);
+    font-size: 1.25rem;
+}
+.learn .r-side .content2 {
+    justify-content: space-between;
+}
+.learn .r-side .content2 p{
+    color: var(--grey-clr);
+    font-size: 1rem;
+}
+.learn .r-side .content2 span{
+    color: #FFFFFF;
+}
+.learn .r-side .content2 .icon{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.learn .r-side .content2 .icon>img{
+    width: 44px;
+    height: 34px;
+}
+.learn .l-content, .r-content{
+    gap: 1rem;
+}
+
+.learn>.l-side{
+    position: relative;
+}
+.learn>.l-side>.childSlab1{
+    position: absolute;
+    top: 3%;
+    left: 6%;
+}
+.learn>.l-side>.childSlab2{
+    position: absolute;
+    top: -23%;
+    left: 54%;
+    transform: rotate(12.84deg);
+}
