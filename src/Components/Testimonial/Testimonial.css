@@ -83,3 +83,35 @@
   .t-content2>p{
     color: var(--grey-clr);
   }
+
+
+
+
+  /* media queriy for mobile display */
+@media (max-width:480px){
+    .t-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .t-heading >p {
+        font-size: 1rem;
+    }
+    .t-grid .column {
+        padding: 1rem 1rem;
+    }
+    .t-content {
+        gap: 2rem;
+    }
+    .t-content1 {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .t-grid br{
+        display: block;
+    }
+    .licence {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}

@@ -5,6 +5,8 @@ header{
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+    height: 100%;
+    align-items: center;
 }
 .logo{
     display: flex;
@@ -29,6 +31,7 @@ header{
 
 .navLinks li{
     position: relative;
+    cursor: pointer;
 }
 .navLinks li::after{
     content: "";
@@ -38,7 +41,7 @@ header{
     width: 5%;
     transform: rotate(180deg);
     position: absolute;
-    top: 70%;
+    top: 90%;
     left: 0;
     transition: width 0.3s ease-in-out;
     cursor: pointer;
@@ -47,13 +50,71 @@ header{
     width: 100%;
 }
 
-@media (max-width:960px){
+
+/* media queriy for mobile display */
+@media (max-width:480px){
+    header{
+        position: relative;
+    }
     .navLinks {
         justify-content: flex-end;
     }
     .navLinks>ul {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    gap: 3rem;
+    justify-content:center;
+    width: 110%;
+    flex-direction: column;
+    position: absolute;
+    min-height: 100vh;
+    background: linear-gradient(0deg, #2001FF 0%, rgba(32, 1, 255, 0) 0%);
+    top: -72%;
+    left: -4%;
+    align-items: center;
+    z-index: 1;
+    transition: all 1s linear;
+    }
+    .navLinks>ul.responsive_nav{
+    opacity: 1;
+    visibility: visible;
+    background: linear-gradient(180deg, #2001FF 61.64%, rgba(32, 1, 255, 0) 91.74%);
+    }
+    .navBar .button{
         display: none;
     }
-}
+    .navIcon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        background-color: var(--yellow-clr);
+        height: 10vh;
+        width: 5rem;
+    }
+    
+    .navIcon .first-line,
+    .second-line{
+    position: relative;
+    z-index: 1;
+     width: 30px;
+     height: 2px;
+     background: white;
+     display: inline-block;
+     border-radius: 10px;
+     transition-duration: 0.5s;
+    }
+
+    .navIcon.responsive_nav .first-line{
+        transform: rotate(45deg);
+        top: 1%;
+    }
+    .navIcon.responsive_nav .second-line{
+        transform: rotate(-45deg);
+    }
+    }
 
 

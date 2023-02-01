@@ -3,7 +3,7 @@ import './Faq.css'
 
 const Faq = () => {
   return (
-    <section className="section6">
+    <section className="section6 faq">
     <div className="container">
         <div className="testimonial">
             <div className="t-heading">

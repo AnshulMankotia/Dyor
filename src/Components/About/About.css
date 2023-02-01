@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
+    gap: 4rem;
     background: var(--linear-gradient-blue);
 }
 .a-heading{
@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 3rem;
 }
 .a-button .button2{
@@ -69,18 +69,13 @@
 }
 
 @media (max-width:861px){
-    br{
-        display: none;
-    }
+    
     .a-heading >h1 {
         font-size: 2.5rem;
         line-height: 3rem;
     }
 }
 @media (max-width:650px){
-    br{
-        display: none;
-    }
     .a-heading >h1 {
         font-size: 2rem;
     }
@@ -92,3 +87,17 @@
         gap: 1rem;
     }
 }
+
+ /* media queriy for mobile display */
+ @media (max-width:480px){
+    .a-heading {
+        gap: 2rem;
+    }
+    .a-button {
+        flex-direction: column;
+    }
+    .a-button .button2>img {
+        width: 66px;
+        margin-left: 26px;
+    }
+ }

@@ -27,8 +27,6 @@
 
 .discover .l-side>h2{
     color:#ffffff;
-    line-height: 4.5rem;
-    font-size: 3rem;
 }
 .discover .button{
     display: flex;
@@ -42,3 +40,27 @@
     top: 10%;
     left: -80%;
 }
+
+ /* media queriy for mobile display */
+ @media (max-width:480px){
+    .discover .l-side>h2 {
+        color: #ffffff;
+    }
+    .discover {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 4rem;
+    }
+    .discover .l-side {
+        align-items: center;
+    }
+    .discover .r-side .childSlab {
+        display: none;
+    }
+    .discover .l-side>p {
+        font-size: 1rem;
+    }
+ }
+
+

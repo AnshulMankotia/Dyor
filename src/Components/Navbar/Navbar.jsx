@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Navbar.css";
 import logo1 from "../../images/Group.svg"
 import logo2 from "../../images/logo3.svg"
 import Get from "../GetButton/Get";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
+  const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+  
   return (
     <header>
     <div className="container">
@@ -14,14 +20,18 @@ const Navbar = () => {
         <a href="/#"><img src={logo1} alt="" /></a>
       </div>
       <nav className="navLinks">
-        <ul>
-            <li><a href="/#">About</a></li>
-            <li><a href="/#">Products</a></li>
-            <li><a href="/#">FAQs</a></li>
+        <ul ref={navRef}>
+            <li><Link activeClass="active" to="discover" spy={true} smooth={true}>About</Link></li>
+            <li><Link activeClass="active" to="product" spy={true} smooth={true}>Products</Link></li>
+            <li><Link activeClass="active" to="faq" spy={true} smooth={true}>FAQ's</Link></li>
         </ul>
             <div className="button">
           <Get/>
           </div>
+          <div className="navIcon" onClick={showNavbar}>
+         <span className="first-line"></span>
+         <span className="second-line"></span>
+         </div>
       </nav>
       </div>
     </div>

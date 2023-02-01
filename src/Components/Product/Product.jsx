@@ -5,7 +5,7 @@ import Join from '../JoinButton/Join'
 
 const Product = () => {
   return (
-    <section className="section3">
+    <section className="section3 product">
         <div className="container">
             <div className="discover">
                 <div className="l-side">

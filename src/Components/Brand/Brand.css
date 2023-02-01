@@ -21,3 +21,10 @@
     max-width: 1440px;
     margin-inline: auto;
 }
+
+ /* media queriy for mobile display */
+@media (max-width:480px){
+    .content {
+        gap: 2rem;
+    }
+  }
