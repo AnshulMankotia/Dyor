@@ -1,0 +1,57 @@
+.section1-1{
+    min-height: 80vh;
+}
+.sign-up{
+    display: flex;
+    justify-content: space-between;
+}
+.sign-up .s-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.sign-up .s-right{
+    display: flex;
+}
+.sign-up p{
+    color: var(--grey-clr);
+    font-size:1.25rem;
+}
+.sign-up p:first-child{
+    font-weight: 600;
+}
+.sign-up input{
+    background: rgba(107, 107, 107, 0.1);
+    border: 1px solid #817575;
+    border-radius: 30px;
+padding: 1rem;
+}
+.sign-up button{
+    border-radius: 30px;
+padding: 1rem;
+color: #817575;
+background-color: transparent;
+border: 1px solid #817575;
+transition: all 0.4s ease-in-out;
+}
+.sign-up button:hover{
+background: rgba(107, 107, 107, 0.1);
+border: 1px solid transparent;
+}
+.sign-up label{
+    color: var(--grey-clr);
+}
+.sign-up label>input{
+    margin-right: 0.5rem;
+}
+/* media query for mobile design */
+@media (max-width:480px){
+    .sign-up {
+        flex-direction: column;
+        gap: 6rem;
+    }
+    .sign-up .s-left {
+        gap: 2rem;
+        text-align: center;
+    }
+  }

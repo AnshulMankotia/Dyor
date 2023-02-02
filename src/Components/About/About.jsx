@@ -1,41 +1,29 @@
-import React from "react";
-import Join from "../JoinButton/Join";
-import "./About.css";
-import playbutton from "../../images/playbutton.svg"
-import mobileSlide from "../../images/mobile slide.svg"
-
+import React from 'react'
+import Join from '../JoinButton/Join'
+import './About.css'
+import mobileSlide from '../../images/mobile slab.svg'
 
 const About = () => {
-    return (
-        <section className="section1">
-            <div className="container">
-                <div className="about">
-                    <div className="a-heading">
-                        <h1>
-                            Become a better & well informed <br />
-                            <span> crypto investor</span>
-                        </h1>
-                        <p>
-                            Elevate your crypto game with our hand-picked investment <br />
-                            opportunities and expert analysis
-                        </p>
-                        <div className="a-button">
-                            <div className="button">
-                            <Join />
-                            </div>
-                                
-                            <div className="button2">
-                                <img src={playbutton} alt="" /><span>How it works</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="mobileSlab">
-                        <img src={mobileSlide} alt="" />
-                    </div>
+  return (
+    <section className="section3">
+        <div className="container">
+            <div className="about">
+                <div className="l-side">
+                  <h3>ABOUT US</h3>
+                  <h2>Discover crypto with <br/> fundamentals potential</h2>
+                  <p>Discover hidden gems in the crypto market <br/> through fundamentals analysis</p>
+                  <div className="button">
+                  <Join/>
+                  </div>
+                </div>
+                <div className="r-side">
+                   <img className='parentSlab' src={mobileSlide} alt="" />
+                   <img className='childSlab' src={mobileSlide} alt="" />
                 </div>
             </div>
-        </section>
-    );
-};
+        </div>
+    </section>
+  )
+}
 
-export default About;
+export default About

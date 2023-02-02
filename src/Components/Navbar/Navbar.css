@@ -15,15 +15,14 @@ header{
 }
 .navLinks{
     display: flex;
-    width: 50%;
+    flex: 1;
     justify-content: space-between;
     gap: 1rem;
 }
 .navLinks>ul{
     display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    width: 45%;
+    gap: 3rem;
+    flex: 1;
 }
 .navLinks>ul>li>a{
     color:#FFFFFF;
@@ -35,8 +34,8 @@ header{
 }
 .navLinks li::after{
     content: "";
-    border: 2px solid var(--secondary-clr);
-    border-radius: 10px;
+    border: 1.5px solid var(--secondary-clr);
+    border-radius: 30px;
     display: inline-block;
     width: 5%;
     transform: rotate(180deg);
@@ -69,12 +68,12 @@ header{
     flex-direction: column;
     position: absolute;
     min-height: 100vh;
-    background: linear-gradient(0deg, #2001FF 0%, rgba(32, 1, 255, 0) 0%);
+    background: linear-gradient(180deg, #2001FF 61.64%, rgba(32, 1, 255, 0) 91.74%);
     top: -72%;
     left: -4%;
     align-items: center;
     z-index: 1;
-    transition: all 1s linear;
+    transition: all 0.4s linear;
     }
     .navLinks>ul.responsive_nav{
     opacity: 1;

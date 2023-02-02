@@ -16,7 +16,7 @@ const Faq = () => {
                 </p>
 
             </div>
-        </div>
+
             <div className="t-grid grid-row">
           <div className="column" id="column1">
             <div className="t-content flex-column">
@@ -109,6 +109,8 @@ const Faq = () => {
             </div>
           </div>
         </div>
+        </div>
+            
         
     </div>
 </section>

@@ -1,9 +1,9 @@
 import './App.css';
 import About from './Components/About/About';
 import Brand from './Components/Brand/Brand';
-import Discover from './Components/Discover/Discover';
 import Faq from './Components/FAQ/Faq';
 import Footer from './Components/Footer/Footer';
+import Intro from './Components/Intro/Intro';
 import Invest from './Components/Invest/Invest';
 import Learn from './Components/Learn/Learn';
 import Navbar from './Components/Navbar/Navbar';
@@ -14,9 +14,9 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <About/>
+      <Intro/>
       <Brand/>
-      <Discover/>
+      <About/>
       <Learn/>
       <Product/>
       <Testimonial/>

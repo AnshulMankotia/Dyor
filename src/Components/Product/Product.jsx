@@ -7,7 +7,7 @@ const Product = () => {
   return (
     <section className="section3 product">
         <div className="container">
-            <div className="discover">
+            <div className="about">
                 <div className="l-side">
                   <h3>OUR PRODUCT</h3>
                   <h2>Join the Crypto <br/>Investment Revolution</h2>

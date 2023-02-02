@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Navbar.css";
-import logo1 from "../../images/Group.svg"
-import logo2 from "../../images/logo3.svg"
+import logo1 from "../../images/logo1.svg"
+import logo2 from "../../images/logo2.svg"
 import Get from "../GetButton/Get";
 import { Link } from "react-scroll";
 
@@ -16,12 +16,12 @@ const Navbar = () => {
     <div className="container">
       <div className="navBar">
       <div className="logo">
-        <a href="/#"><img src={logo2} alt="" /></a>
         <a href="/#"><img src={logo1} alt="" /></a>
+        <a href="/#"><img src={logo2} alt="" /></a>
       </div>
       <nav className="navLinks">
         <ul ref={navRef}>
-            <li><Link activeClass="active" to="discover" spy={true} smooth={true}>About</Link></li>
+            <li><Link activeClass="active" to="about" spy={true} smooth={true}>About</Link></li>
             <li><Link activeClass="active" to="product" spy={true} smooth={true}>Products</Link></li>
             <li><Link activeClass="active" to="faq" spy={true} smooth={true}>FAQ's</Link></li>
         </ul>

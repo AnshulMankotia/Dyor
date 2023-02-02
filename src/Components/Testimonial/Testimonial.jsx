@@ -21,10 +21,7 @@ const Testimonial = () => {
                         <div className="button">
                             <Get/>
                         </div>
-
-                        
                     </div>
-                </div>
                     <div className="t-grid grid-row">
                   <div className="column" id="column1">
                     <div className="t-content flex-column">
@@ -150,6 +147,8 @@ const Testimonial = () => {
                     
                   </div>
                 </div>
+                </div>
+                    
                 
             </div>
         </section>

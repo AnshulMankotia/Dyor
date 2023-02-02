@@ -1,0 +1,10 @@
+.header2{
+    min-height: 30vh;
+}
+.header2 .logo{
+    display: flex;
+    align-items: center;
+}
+.header2 .logo>img{
+    width: 20%;
+}
